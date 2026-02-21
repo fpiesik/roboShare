@@ -1,0 +1,31 @@
+audioapi: 1
+noaudioin: False
+audioindev1: 0 2
+audioindevname1: vc4-hdmi-0 (hardware)
+noaudioout: False
+audiooutdev1: 0 -2
+audiooutdevname1: vc4-hdmi-0 (hardware)
+audiobuf: 25
+rate: 44100
+callback: 0
+audioblocksize: 64
+midiapi: 1
+nomidiin: False
+midiindev1: 0
+midiindevname1: ALSA MIDI device #1
+midiindev2: 0
+midiindevname2: ALSA MIDI device #1
+nomidiout: False
+midioutdev1: 0
+midioutdevname1: ALSA MIDI device #1
+midioutdev2: 0
+midioutdevname2: ALSA MIDI device #1
+path1: /home/sdz/Documents/Pd/externals
+npath: 1
+standardpath: 1
+verbose: 0
+nloadlib: 0
+defeatrt: 0
+flags: 
+zoom: 1
+loading: no

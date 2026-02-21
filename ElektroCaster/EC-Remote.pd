@@ -1,0 +1,12 @@
+#N canvas 278 287 720 490 12;
+#X obj 148 256 noteout;
+#X obj 148 173 route note;
+#X obj 148 206 t a a;
+#X obj 148 134 route seq/EC;
+#X obj 148 96 netreceive -u 8000;
+#X obj 107 217 print;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 4 0 5 0;

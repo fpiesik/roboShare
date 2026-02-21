@@ -1,0 +1,1 @@
+/home/sdz/roboShare/pythagotron/startPySeq.sh

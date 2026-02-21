@@ -1,0 +1,100 @@
+<!DOCTYPE patchbay>
+<patchbay name="roboJack" version="0.6.3">
+ <output-sockets>
+  <socket name="system" client="system" type="jack-audio" exclusive="off">
+   <plug>capture_1</plug>
+   <plug>capture_2</plug>
+   <plug>capture_3</plug>
+   <plug>capture_4</plug>
+   <plug>capture_5</plug>
+   <plug>capture_6</plug>
+  </socket>
+  <socket name="pure_data" client="pure_data" type="jack-audio" exclusive="off">
+   <plug>output0</plug>
+   <plug>output1</plug>
+   <plug>output2</plug>
+   <plug>output3</plug>
+   <plug>output4</plug>
+   <plug>output5</plug>
+   <plug>output6</plug>
+   <plug>output7</plug>
+  </socket>
+  <socket name="VCV Rack-01" client="VCV Rack-01" type="jack-audio" exclusive="off">
+   <plug>outport 0</plug>
+   <plug>outport 1</plug>
+  </socket>
+  <socket name="pure_data 2" client="pure_data" type="jack-audio" exclusive="off">
+   <plug>output6</plug>
+   <plug>output7</plug>
+  </socket>
+  <socket name="Midi Through" client="Midi Through" type="alsa-midi" exclusive="off">
+   <plug>Midi Through Port-0</plug>
+  </socket>
+  <socket name="elektrocaster" client="elektrocaster" type="alsa-midi" exclusive="off">
+   <plug>elektrocaster MIDI 1</plug>
+  </socket>
+  <socket name="keyfoot" client="keyfoot" type="alsa-midi" exclusive="off">
+   <plug>keyfoot MIDI 1</plug>
+  </socket>
+  <socket name="GE300LITE" client="GE300LITE" type="alsa-midi" exclusive="off">
+   <plug>GE300LITE MIDI 1</plug>
+  </socket>
+ </output-sockets>
+ <input-sockets>
+  <socket name="system" client="system" type="jack-audio" exclusive="off">
+   <plug>playback_1</plug>
+   <plug>playback_2</plug>
+  </socket>
+  <socket name="pure_data" client="pure_data" type="jack-audio" exclusive="off">
+   <plug>input0</plug>
+   <plug>input1</plug>
+  </socket>
+  <socket name="VCV Rack-01" client="VCV Rack-01" type="jack-audio" exclusive="off">
+   <plug>inport 0</plug>
+   <plug>inport 1</plug>
+   <plug>inport 2</plug>
+   <plug>inport 3</plug>
+   <plug>inport 4</plug>
+   <plug>inport 5</plug>
+   <plug>inport 6</plug>
+   <plug>inport 7</plug>
+  </socket>
+  <socket name="VCV Rack-01 2" client="VCV Rack-01" type="jack-audio" exclusive="off">
+   <plug>inport 6</plug>
+   <plug>inport 7</plug>
+  </socket>
+  <socket name="Midi Through" client="Midi Through" type="alsa-midi" exclusive="off">
+   <plug>Midi Through Port-0</plug>
+  </socket>
+  <socket name="elektrocaster" client="elektrocaster" type="alsa-midi" exclusive="off">
+   <plug>elektrocaster MIDI 1</plug>
+  </socket>
+  <socket name="keyfoot" client="keyfoot" type="alsa-midi" exclusive="off">
+   <plug>keyfoot MIDI 1</plug>
+  </socket>
+  <socket name="GE300LITE" client="GE300LITE" type="alsa-midi" exclusive="off">
+   <plug>GE300LITE MIDI 1</plug>
+  </socket>
+  <socket name="VCV Rack" client="VCV Rack" type="alsa-midi" exclusive="off">
+   <plug>VCV Rack input</plug>
+  </socket>
+  <socket name="Client-129" client="Client-129" type="alsa-midi" exclusive="off">
+   <plug>port-5</plug>
+  </socket>
+  <socket name="Client-129 2" client="Client-129" type="alsa-midi" exclusive="off">
+   <plug>port-3</plug>
+  </socket>
+ </input-sockets>
+ <slots/>
+ <cables>
+  <cable type="jack-audio" output="system" input="pure_data"/>
+  <cable type="jack-audio" output="system" input="VCV Rack-01"/>
+  <cable type="jack-audio" output="pure_data" input="system"/>
+  <cable type="jack-audio" output="VCV Rack-01" input="system"/>
+  <cable type="jack-audio" output="pure_data 2" input="VCV Rack-01 2"/>
+  <cable type="alsa-midi" output="elektrocaster" input="Client-129 2"/>
+  <cable type="alsa-midi" output="keyfoot" input="Client-129"/>
+  <cable type="alsa-midi" output="keyfoot" input="VCV Rack"/>
+ </cables>
+</patchbay>
+

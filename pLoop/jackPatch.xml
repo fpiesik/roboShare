@@ -1,0 +1,99 @@
+<!DOCTYPE patchbay>
+<patchbay version="0.5.0" name="jackPatch">
+ <output-sockets>
+  <socket exclusive="off" client="Arturia KeyStep 32" type="alsa-midi" name="Arturia KeyStep 1">
+   <plug>Arturia KeyStep 32 MIDI 1</plug>
+  </socket>
+  <socket exclusive="off" client="UM-1" type="alsa-midi" name="UM- 1">
+   <plug>UM-1 MIDI 1</plug>
+  </socket>
+  <socket exclusive="off" client="Pure Data" type="alsa-midi" name="pLoopA-Midi">
+   <plug>Pure Data Midi-Out 1</plug>
+  </socket>
+  <socket exclusive="off" client="Pure Data" type="alsa-midi" name="pLoopG-Midi">
+   <plug>Pure Data Midi-Out 1</plug>
+  </socket>
+  <socket exclusive="off" client="system" type="jack-audio" name="system 1-8">
+   <plug>capture_1</plug>
+   <plug>capture_2</plug>
+   <plug>capture_3</plug>
+   <plug>capture_4</plug>
+   <plug>capture_5</plug>
+   <plug>capture_6</plug>
+   <plug>capture_7</plug>
+   <plug>capture_8</plug>
+  </socket>
+  <socket exclusive="off" client="pure_data" type="jack-audio" name="pLoopA-Audio">
+   <plug>output0</plug>
+   <plug>output1</plug>
+  </socket>
+  <socket exclusive="off" client="REAPER" type="jack-audio" name="REAPER-Master">
+   <plug>out1</plug>
+   <plug>out2</plug>
+  </socket>
+  <socket exclusive="off" client="REAPER" type="jack-midi" name="REAPER-Midi">
+   <plug>MIDI Output 1</plug>
+  </socket>
+ </output-sockets>
+ <input-sockets>
+  <socket exclusive="off" client="Arturia KeyStep 32" type="alsa-midi" name="Arturia KeyStep 1">
+   <plug>Arturia KeyStep 32 MIDI 1</plug>
+  </socket>
+  <socket exclusive="off" client="Neutron\(1\)" type="alsa-midi" name="Neutron\(1\) 1">
+   <plug>Neutron\(1\) MIDI 1</plug>
+  </socket>
+  <socket exclusive="off" client="system" type="jack-audio" name="system 3-4">
+   <plug>playback_3</plug>
+   <plug>playback_4</plug>
+  </socket>
+  <socket exclusive="off" client="REAPER" type="jack-audio" name="REAPER-8in">
+   <plug>in1</plug>
+   <plug>in2</plug>
+   <plug>in3</plug>
+   <plug>in4</plug>
+   <plug>in5</plug>
+   <plug>in6</plug>
+   <plug>in7</plug>
+   <plug>in8</plug>
+  </socket>
+  <socket exclusive="off" client="Pure Data" type="alsa-midi" name="Pure Data 1">
+   <plug>Pure Data Midi-In 1</plug>
+  </socket>
+  <socket exclusive="off" client="system" type="jack-audio" name="system 1-2">
+   <plug>playback_1</plug>
+   <plug>playback_2</plug>
+  </socket>
+  <socket exclusive="off" client="pure_data" type="jack-audio" name="pLoopIn">
+   <plug>input0</plug>
+   <plug>input1</plug>
+   <plug>input2</plug>
+   <plug>input3</plug>
+   <plug>input4</plug>
+   <plug>input5</plug>
+   <plug>input6</plug>
+   <plug>input7</plug>
+  </socket>
+  <socket exclusive="off" client="REAPER" type="jack-audio" name="REAPER-pLoopIn">
+   <plug>in11</plug>
+   <plug>in12</plug>
+  </socket>
+  <socket exclusive="off" client="a2j" type="jack-midi" name="a2j 1">
+   <plug>Pure Data \[129\] \(playback\): Pure Data Midi-In 1</plug>
+  </socket>
+ </input-sockets>
+ <slots/>
+ <cables>
+  <cable input="Neutron\(1\) 1" type="alsa-midi" output="Arturia KeyStep 1"/>
+  <cable input="Pure Data 1" type="alsa-midi" output="UM- 1"/>
+  <cable input="Neutron\(1\) 1" type="alsa-midi" output="pLoopA-Midi"/>
+  <cable input="Arturia KeyStep 1" type="alsa-midi" output="pLoopA-Midi"/>
+  <cable input="Neutron\(1\) 1" type="alsa-midi" output="pLoopG-Midi"/>
+  <cable input="REAPER-8in" type="jack-audio" output="system 1-8"/>
+  <cable input="pLoopIn" type="jack-audio" output="system 1-8"/>
+  <cable input="system 3-4" type="jack-audio" output="pLoopA-Audio"/>
+  <cable input="REAPER-pLoopIn" type="jack-audio" output="pLoopA-Audio"/>
+  <cable input="system 1-2" type="jack-audio" output="REAPER-Master"/>
+  <cable input="a2j 1" type="jack-midi" output="REAPER-Midi"/>
+ </cables>
+</patchbay>
+

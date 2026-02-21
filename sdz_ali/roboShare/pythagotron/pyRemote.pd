@@ -1,0 +1,80 @@
+#N canvas 701 280 905 484 12;
+#N canvas 0 56 1920 993 midiController 0;
+#X obj 142 157 vsl 30 128 0 127 0 0 empty empty Bias 0 -9 0 14 -262144
+-1 -1 0 1;
+#X floatatom 142 321 5 0 0 0 - - -;
+#X obj 142 393 ctlout 17 1;
+#X obj 226 155 vsl 30 128 0 127 0 0 empty empty Attack 0 -9 0 14 -262144
+-1 -1 0 1;
+#X floatatom 226 325 5 0 0 0 - - -;
+#X obj 226 398 ctlout 11 1;
+#X obj 309 156 vsl 30 128 0 127 0 0 empty empty Hold 0 -9 0 14 -262144
+-1 -1 0 1;
+#X floatatom 309 326 5 0 0 0 - - -;
+#X obj 309 399 ctlout 12 1;
+#X obj 392 155 vsl 30 128 0 127 0 0 empty empty Decay 0 -9 0 14 -262144
+-1 -1 0 1;
+#X floatatom 392 325 5 0 0 0 - - -;
+#X obj 478 157 vsl 30 128 0 127 0 0 empty empty Sustain 0 -9 0 14 -262144
+-1 -1 0 1;
+#X floatatom 478 327 5 0 0 0 - - -;
+#X obj 392 398 ctlout 13 1;
+#X obj 567 157 vsl 30 128 0 127 0 0 empty empty Release 0 -9 0 14 -262144
+-1 -1 0 1;
+#X floatatom 567 327 5 0 0 0 - - -;
+#X obj 567 400 ctlout 15 1;
+#X obj 478 400 ctlout 14 1;
+#X obj 773 327 noteout 2;
+#X msg 773 262 21 120;
+#X msg 831 262 22 120;
+#X obj 753 161 tgl 40 0 empty empty MotorOnOff 0 -7 0 14 -262144 -1
+-1 0 1;
+#X obj 759 217 sel 0 1;
+#X obj 1014 271 notein;
+#X obj 1040 343 noteout;
+#X obj 1436 87 netreceive -u 8000;
+#X obj 1436 123 route gharp;
+#X obj 1436 164 route root;
+#X obj 1436 255 s ghRoot;
+#X obj 1214 176 route note;
+#X obj 1214 209 t a a;
+#X obj 1246 236 unpack f f f;
+#X obj 1214 283 spigot;
+#X obj 1214 324 s netNote;
+#X obj 1214 137 route seq/pyth;
+#X obj 1266 267 <= 2;
+#X obj 1436 213 - 4;
+#X obj 1316 379 print netnote;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 9 0 10 0;
+#X connect 10 0 13 0;
+#X connect 11 0 12 0;
+#X connect 12 0 17 0;
+#X connect 14 0 15 0;
+#X connect 15 0 16 0;
+#X connect 19 0 18 0;
+#X connect 20 0 18 0;
+#X connect 21 0 22 0;
+#X connect 22 0 19 0;
+#X connect 22 1 20 0;
+#X connect 25 0 26 0;
+#X connect 25 0 34 0;
+#X connect 26 0 27 0;
+#X connect 27 0 36 0;
+#X connect 29 0 30 0;
+#X connect 30 0 32 0;
+#X connect 30 1 31 0;
+#X connect 31 2 35 0;
+#X connect 32 0 33 0;
+#X connect 32 0 37 0;
+#X connect 32 0 24 0;
+#X connect 34 0 29 0;
+#X connect 35 0 32 1;
+#X connect 36 0 28 0;
+#X coords 0 -1 1 1 800 200 1 100 100;
+#X restore 24 63 pd midiController;

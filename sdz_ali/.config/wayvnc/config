@@ -1,0 +1,5 @@
+address=0.0.0.0
+enable_auth=true
+enable_pam=true
+private_key_file=/home/sdz/.config/wayvnc/key.pem
+certificate_file=/home/sdz/.config/wayvnc/cert.pem

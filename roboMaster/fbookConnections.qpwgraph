@@ -1,0 +1,66 @@
+<!DOCTYPE patchbay>
+<patchbay version="0.4.1" name="fbookConnections">
+ <items>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="GT-1000 Multichannel" port="GT-1000:capture_FR"/>
+   <input node="REAPER" port="REAPER:in2"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="GT-1000 Multichannel" port="GT-1000:capture_RR"/>
+   <input node="REAPER" port="REAPER:in4"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="REAPER" port="REAPER:out1"/>
+   <input node="LE_WH-1000XM3 [WH-1000XM3]" port="LE_WH-1000XM3:playback_FL"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="REAPER" port="REAPER:out2"/>
+   <input node="LE_WH-1000XM3 [WH-1000XM3]" port="LE_WH-1000XM3:playback_FR"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="GT-1000 Multichannel" port="GT-1000:capture_FL"/>
+   <input node="REAPER" port="REAPER:in1"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="GT-1000 Multichannel" port="GT-1000:capture_RL"/>
+   <input node="REAPER" port="REAPER:in3"/>
+  </item>
+  <item port-type="pipewire-midi" node-type="pipewire">
+   <output node="Midi-Bridge" port="M8:M8 MIDI 1"/>
+   <input node="Midi-Bridge" port="UM-1:UM-1 MIDI 1"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="M8 Analog Stereo" port="M8:capture_FL"/>
+   <input node="REAPER" port="REAPER:in5"/>
+  </item>
+  <item port-type="pipewire-midi" node-type="pipewire">
+   <output node="Midi-Bridge" port="M8:M8 MIDI 1"/>
+   <input node="REAPER" port="REAPER:MIDI Input 1"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="REAPER" port="REAPER:out4"/>
+   <input node="GT-1000 Multichannel" port="GT-1000:playback_RR"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="REAPER" port="REAPER:out3"/>
+   <input node="GT-1000 Multichannel" port="GT-1000:playback_RL"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="REAPER" port="REAPER:out1"/>
+   <input node="GT-1000 Multichannel" port="GT-1000:playback_FL"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="REAPER" port="REAPER:out2"/>
+   <input node="GT-1000 Multichannel" port="GT-1000:playback_FR"/>
+  </item>
+  <item port-type="pipewire-midi" node-type="pipewire">
+   <output node="REAPER" port="REAPER:MIDI Output 1"/>
+   <input node="Midi-Bridge" port="M8:M8 MIDI 1"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output node="M8 Analog Stereo" port="M8:capture_FR"/>
+   <input node="REAPER" port="REAPER:in6"/>
+  </item>
+ </items>
+</patchbay>
+

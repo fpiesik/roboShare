@@ -1,0 +1,11 @@
+[default-routes]
+alsa_card.platform-bcm2835_audio:output:analog-output:channelMap=FL;FR;
+alsa_card.platform-bcm2835_audio:output:analog-output:channelVolumes=0.063997067511082;0.063997067511082;
+alsa_card.platform-bcm2835_audio:output:analog-output:latencyOffsetNsec=0
+alsa_card.platform-bcm2835_audio:output:analog-output:mute=true
+alsa_card.platform-bcm2835_audio:profile:output:stereo-fallback=analog-output;
+alsa_card.platform-fef00700.hdmi:output:hdmi-output-0:channelMap=FL;FR;
+alsa_card.platform-fef00700.hdmi:output:hdmi-output-0:channelVolumes=0.042804382741451;0.042804382741451;
+alsa_card.platform-fef00700.hdmi:output:hdmi-output-0:iec958Codecs=
+alsa_card.platform-fef00700.hdmi:output:hdmi-output-0:latencyOffsetNsec=0
+alsa_card.platform-fef00700.hdmi:profile:output:hdmi-stereo=hdmi-output-0;
