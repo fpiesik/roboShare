@@ -1,6 +1,6 @@
-#N canvas 0 124 1920 984 10;
+#N canvas 0 152 1920 984 10;
 #X obj 0 0 cnv 15 2000 1200 empty empty empty 20 12 0 14 #b8b8b8 #404040 0;
-#N canvas 0 152 1920 984 control 1;
+#N canvas 0 152 1920 984 control 0;
 #X obj 1 -1 cnv 15 1850 150 empty empty empty 20 12 0 14 #b8b8b8 #404040 0;
 #N canvas 2 147 1041 701 wii 0;
 #X msg 379 229 disconnect;
