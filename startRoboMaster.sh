@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/frank/Dropbox/roboShare/roboMaster
+cd /home/frank/Documents/GitHub/roboShare/roboMaster
 pd -alsamidi -mididev 1,2,3,4 -path ../extra -path ../myExtra -open ./roboMaster.pd 
 #sleep 15
 #//aconnect 'Midi Through' 'Pure Data':0
