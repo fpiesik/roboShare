@@ -1,10 +1,10 @@
-#N canvas 0 54 873 622 12;
+#N canvas 0 82 873 622 12;
 #X obj 220 334 seq/clock;
 #X obj 201 67 loadbang;
 #X msg 201 117 \; pd dsp 0;
 #X obj 263 246 loadbang;
 #X obj 285 301 t b b;
-#N canvas 0 28 1280 632 net 0;
+#N canvas 0 56 1280 632 net 1;
 #X obj 117 45 netreceive -u 8000;
 #X obj 117 83 route pyth gharp;
 #X obj 171 119 s frmGHarp;
@@ -244,7 +244,7 @@
 #X connect 7 0 8 0;
 #X connect 9 0 7 0;
 #X connect 10 0 8 0;
-#X connect 11 0 14 0;
+#X connect 11 0 19 0;
 #X connect 12 0 13 0;
 #X connect 14 0 13 0;
 #X connect 15 0 8 0;
