@@ -1,4 +1,4 @@
-#N canvas 135 110 1041 701 10;
+#N canvas 135 138 1041 701 10;
 #X obj 101 101 tgl 40 0 empty empty C 13 20 0 20 #dcdcdc #000000 #000000 0 1;
 #X obj 104 391 metro 150;
 #X obj 103 556 s clock;
@@ -29,7 +29,7 @@
 #X obj 494 134 int;
 #X obj 494 169 change;
 #X obj 230 18 loadbang;
-#X obj 142 101 nbx 3 40 10 200 0 0 empty empty empty 0 -8 0 35 #dcdcdc #000000 #000000 0 256;
+#X obj 142 101 nbx 3 40 10 500 0 0 empty empty empty 0 -8 0 35 #dcdcdc #000000 #000000 0 256;
 #X obj 103 529 t f f;
 #X obj 168 556 s preClock;
 #X obj 103 465 spigot;
