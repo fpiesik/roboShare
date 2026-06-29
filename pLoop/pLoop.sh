@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /home/frank/Documents/roboShare/pLoop
-pd -rt -open ./pLoopA/pLoopA.pd &
+pw-jack -p 128 pd -rt -open ./pLoopA/pLoopA.pd &
 sleep 2
 pd -noaudio -open ./pLoopG/pLoopG.pd &
 sleep 2
